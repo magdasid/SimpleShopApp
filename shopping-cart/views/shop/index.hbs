@@ -1,82 +1,20 @@
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://blaber.pl/wp-content/uploads/2016/03/One-Bowl-Brownies-Final1-e1458118056626.jpg" alt="brownie" class="img-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Pyszne brownie z fasoli xd</p>
-        <div class="clearfix">
-            <div class="price pull-left">8 zł</div>
-            <a href="#" class="btn btn-default pull-right" role="button">Buy</a>
+{{# each products }}
+  <div class="row">
+    {{# each this }}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ this.imagePath }}" alt="brownie" class="img-responsive">
+          <div class="caption">
+            <h3>{{ this.title }}</h3>
+            <p>{{ this.description }}</p>
+            <div class="clearfix">
+              <div class="price pull-left">{{ this.price }}zł</div>
+              <a href="#" class="btn btn-default pull-right" role="button">Buy</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    {{/ each}}
   </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://blaber.pl/wp-content/uploads/2016/03/One-Bowl-Brownies-Final1-e1458118056626.jpg" alt="brownie" class="img-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Pyszne brownie z fasoli xd</p>
-        <div class="clearfix">
-            <div class="price pull-left">8 zł</div>
-            <a href="#" class="btn btn-default pull-right" role="button">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://blaber.pl/wp-content/uploads/2016/03/One-Bowl-Brownies-Final1-e1458118056626.jpg" alt="brownie" class="img-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Pyszne brownie z fasoli xd</p>
-        <div class="clearfix">
-            <div class="price pull-left">8 zł</div>
-            <a href="#" class="btn btn-default pull-right" role="button">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://blaber.pl/wp-content/uploads/2016/03/One-Bowl-Brownies-Final1-e1458118056626.jpg" alt="brownie" class="img-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Pyszne brownie z fasoli xd</p>
-        <div class="clearfix">
-            <div class="price pull-left">8 zł</div>
-            <a href="#" class="btn btn-default pull-right" role="button">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://blaber.pl/wp-content/uploads/2016/03/One-Bowl-Brownies-Final1-e1458118056626.jpg" alt="brownie" class="img-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Pyszne brownie z fasoli xd</p>
-        <div class="clearfix">
-            <div class="price pull-left">8 zł</div>
-            <a href="#" class="btn btn-default pull-right" role="button">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://blaber.pl/wp-content/uploads/2016/03/One-Bowl-Brownies-Final1-e1458118056626.jpg" alt="brownie" class="img-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Pyszne brownie z fasoli xd</p>
-        <div class="clearfix">
-            <div class="price pull-left">8 zł</div>
-            <a href="#" class="btn btn-default pull-right" role="button">Buy</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{{/ each}}
+
