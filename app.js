@@ -25,6 +25,7 @@ app.use((req, res, next) => {
     }
     next();
 });
+mongoose.Promise = global.Promise;
 
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
